@@ -13,12 +13,12 @@ function MonthPicker({date, onChange}) {
   const monthPrev = () => {
     const newDate = subMonths(date, 1);
     onChange(newDate);
-    console.log(newDate);
+    console.log('newDate' ,newDate);
   };
   const monthNext = () => {
     const newDate = addMonths(date, +1);
     onChange(newDate);
-    console.log(newDate);
+    console.log('newDate' ,newDate);
   };
 
   return (
